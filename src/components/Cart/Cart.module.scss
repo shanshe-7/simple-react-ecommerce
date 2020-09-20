@@ -1,0 +1,148 @@
+.cardItemGrid {
+  width: 90%;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+}
+
+.itemContainerGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  width: 7em;
+  height: 7em;
+}
+
+.pricePlusDelete {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plusMinusQuantityDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #37474f;
+  color: white;
+
+  height: 32px;
+  width: 82px;
+}
+
+.plusMinusDiv {
+  display: flex;
+  align-items: center;
+  width: 52px;
+  height: 32px;
+}
+
+.minusPlusButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 32px;
+  border: 1px solid #ff8a65;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.shoppingCartGrid {
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #455a64;
+  width: 90%;
+  height: 3em;
+}
+
+.shippingCartIcon {
+  margin-left: 1em;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 32px;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: #e8eaf6;
+  border-radius: 4px;
+  height: 30px;
+  width: 100px;
+}
+
+.totalPriceGrid {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #eceff1;
+  margin-top: 5px;
+
+  height: 4em;
+}
+
+.totalPriceTypo {
+  margin-left: 3em;
+}
+
+.minusPlusButton:hover {
+  background-color: #ff5722;
+}
+
+.deleteIcon:hover {
+  background-color: #e1f5fe;
+}
+
+@media only screen and (max-width: 859px) {
+  .image {
+    width: 70%;
+    height: 70%;
+  }
+
+  .imageGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+
+  .shoppingCartGrid {
+    width: 80%;
+  }
+
+  .cardItemGrid {
+    width: 80%;
+  }
+
+  .totalPriceGrid {
+    width: 80%;
+  }
+
+  .descriptionGrid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-variant: normal;
+  }
+  .pricePlusDelete {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

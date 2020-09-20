@@ -1,0 +1,43 @@
+.header {
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #455a64;
+  color: white;
+  position: sticky;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.grid {
+  height: 100%;
+}
+
+.home {
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: #9e9e9e;
+}

@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AllPhoneDisplay from './components/HomeScreen/AllPhoneDisplay/AllPhoneDisplay';
+import Navigation from './components/Navigatin/Navigation';
+import SinglePhone from './components/SinglePhone/SinglePhone';
+import Cart from './components/Cart/Cart';
+import { Route, Switch } from 'react-router-dom';
+import classes from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.mainDiv}>
+      <Navigation />
+      <Switch>
+        <Route exact path='/phone' component={SinglePhone} />
+        <Route exact path='/cart' component={Cart} />
+        <Route exact path='/' component={AllPhoneDisplay} />
+      </Switch>
     </div>
   );
 }

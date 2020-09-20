@@ -1,0 +1,39 @@
+.figure {
+  margin: 10%;
+}
+
+.figcaption {
+  text-align: start;
+}
+
+.price {
+  display: inline-block;
+  padding-top: 3%;
+  font-size: 2em;
+}
+
+.card {
+  margin: 10px;
+}
+
+.sortByPriceGrid {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  background-color: white;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.paginationGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: inline-block;
+  background-color: white;
+}
