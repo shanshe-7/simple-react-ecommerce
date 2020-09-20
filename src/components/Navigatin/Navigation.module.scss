@@ -34,10 +34,40 @@
   align-items: center;
 }
 
-.navLink {
+.navLinkCart {
   text-decoration: none;
+  border: 1px solid #e1f5fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  border-radius: 4px;
 }
 
-.navLink:hover {
+.navLinkHome {
+  text-decoration: none;
+  border: 1px solid #e1f5fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  border-radius: 4px;
+}
+
+.navLinkGridCart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navLinkGridHome {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLinkHome:hover {
+  background-color: #9e9e9e;
+}
+
+.navLinkCart:hover {
   background-color: #9e9e9e;
 }

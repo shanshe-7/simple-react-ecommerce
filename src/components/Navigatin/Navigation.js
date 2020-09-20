@@ -14,21 +14,37 @@ const Navigation = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    border: '5px solid green',
   };
   return (
     <header className={classes.header}>
       <Grid className={classes.grid} container alignItems='center'>
-        <Grid style={style} xs={3} item>
-          <NavLink exact to='/' className={classes.navLink}>
+        <Grid className={classes.navLinkGridHome} xs={4} item>
+          <NavLink
+            exact
+            to='/'
+            style={{ marginLeft: '10%' }}
+            className={classes.navLinkHome}
+          >
             <Button style={{ color: 'white' }} className={classes.home}>
               <Typography>Home</Typography>
             </Button>
           </NavLink>
         </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid style={style} xs={3} item>
-          <NavLink exact to='/cart' className={classes.navLink}>
-            <Button style={style}>
+        <Grid item xs={4}></Grid>
+        <Grid
+          className={classes.navLinkGridCart}
+          // style={{ marginRight: '20px' }}
+          xs={4}
+          item
+        >
+          <NavLink
+            exact
+            to='/cart'
+            style={{ marginRight: '10%' }}
+            className={classes.navLinkCart}
+          >
+            <Button>
               <ShoppingCartIcon style={{ color: 'white' }} />
               <Typography style={{ color: 'white' }}>
                 Cart{' '}
