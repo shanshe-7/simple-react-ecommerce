@@ -13,12 +13,7 @@ const BrandsSidebar = ({ handleFilter }) => {
           id={b.name}
           value={b.name}
         />
-        <Typography
-          variant='h6'
-          color='primary'
-          id={b.name}
-          className={classes.brandsName}
-        >
+        <Typography color='primary' id={b.name} className={classes.brandsName}>
           {b.name}
         </Typography>
       </Typography>
@@ -27,7 +22,6 @@ const BrandsSidebar = ({ handleFilter }) => {
 
   return (
     <Grid
-      // style={{ border: '2px solid green', marginRight: '100px' }}
       justify='center'
       className={classes.mainGrid}
       container

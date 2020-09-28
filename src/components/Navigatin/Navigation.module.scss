@@ -17,9 +17,13 @@
 }
 
 .home {
-  text-align: center;
-  font-size: 1.2em;
   color: white;
+  font-size: 1em;
+}
+
+.cartIcon {
+  color: white;
+  font-size: 1em;
 }
 
 .flexCenter {
@@ -41,6 +45,7 @@
   justify-content: center;
   align-items: center;
   width: 110px;
+  height: 35px;
   border-radius: 4px;
 }
 
@@ -51,6 +56,7 @@
   justify-content: center;
   align-items: center;
   width: 110px;
+  height: 35px;
   border-radius: 4px;
 }
 
@@ -70,4 +76,23 @@
 
 .navLinkCart:hover {
   background-color: #9e9e9e;
+}
+
+@media screen and (max-width: 599px) {
+  .home {
+    font-size: 0.7em;
+  }
+  .cartIcon {
+    font-size: 0.7em;
+  }
+
+  .navLinkCart {
+    height: 30px;
+    width: 90px;
+  }
+
+  .navLinkHome {
+    height: 30px;
+    width: 90px;
+  }
 }
